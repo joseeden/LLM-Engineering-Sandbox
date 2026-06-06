@@ -29,7 +29,7 @@ This repository serves as a personal testing ground for implementing clean LLM a
     cp .env.example .env
     ```
 
-2. Populate your .env file with your respective API provider keys.
+2. Populate your `.env` file with your respective API provider keys.
 
     ```env
     ANTHROPIC_API_KEY=your_anthropic_key_here

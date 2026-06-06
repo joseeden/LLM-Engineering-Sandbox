@@ -10,7 +10,7 @@ response = client.messages.create(
     model="claude-haiku-4-5",
     max_tokens=100,
     temperature=0.2,
-    top_p=0.3,
+    # top_p=0.3,
     messages=[{
         "role": "user",
         "content": "Generate a database connection string template."

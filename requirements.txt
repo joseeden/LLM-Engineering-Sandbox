@@ -1,0 +1,10 @@
+# Core LLM SDKs
+anthropic>=0.25.0
+openai>=1.12.0
+
+# Environment & Configuration Management
+python-dotenv>=1.0.1
+
+# Computational Notebook Support (For future .ipynb work)
+jupyter>=1.0.0
+notebook>=7.1.0
