@@ -8,7 +8,6 @@ Few-shot prompting is a technique where you provide the model with a few example
 ## Project Structure
 
 ```text
-.
 ├── .env
 ├── .env.example
 ├── main.py
@@ -33,7 +32,7 @@ Few-shot prompting is a technique where you provide the model with a few example
 
     ```bash
     git clone https://github.com/joseeden/llm-engineering-sandbox
-    cd project-llm-engineering-sandbox/building-ai-workflows/01-using-http-requests
+    cd project-llm-engineering-sandbox/building-ai-workflows/03-few-shot-prompting
     ```
 
 2. Copy the environment file

@@ -1,8 +1,48 @@
-# Few-Shot Prompting with OpenAI API
+# Multi-Step AI Workflow with OpenAI API
 
-This example demonstrates how to implement few-shot prompting using the OpenAI API. 
+This example demonstrates how to build a simple multi-step AI workflow using the OpenAI API to process website content and generate social media posts.
 
-Few-shot prompting is a technique where you provide the model with a few examples of the desired output format, which helps guide the model's response.
+Instead of sending a single prompt to a model, the application breaks the task into multiple steps:
+
+1. **Website Fetching**
+
+    The workflow starts by downloading the HTML content from the provided URL using the `requests` library.
+
+2. **Content Extraction**
+
+    A dedicated AI prompt extracts the main content from the HTML and removes unnecessary elements such as navigation menus, scripts, headers, and footers.
+
+3. **Summarization**
+
+    The extracted content is summarized into a concise set of key points.
+
+4. **Social Media Post Generation**
+
+    The summary is passed into a final prompt that generates a social media post.
+    This step uses examples stored in `post-examples.json` to guide the writing style and output format.
+    
+The output of each step is passed to the next stage of the workflow:
+
+```text
+Website URL
+    │
+    ▼
+Fetch HTML
+    │
+    ▼
+Extract Core Content
+    │
+    ▼
+Summarize Content
+    │
+    ▼
+Generate Social Media Post
+    │
+    ▼
+Final Output
+``` 
+
+This approach allows each step to focus on a specific task, which often produces more reliable results than handling everything in a single prompt.
 
 
 ## Project Structure
@@ -33,7 +73,7 @@ Few-shot prompting is a technique where you provide the model with a few example
 
     ```bash
     git clone https://github.com/joseeden/llm-engineering-sandbox
-    cd project-llm-engineering-sandbox/building-ai-workflows/04-dynamic-content
+    cd project-llm-engineering-sandbox/building-ai-workflows/05-multi-step-workflow
     ```
 
 2. Copy the environment file
@@ -86,8 +126,7 @@ This will:
 2. Install all project dependencies
 3. Use the versions locked in `uv.lock`
 
-
-## Adding Examples 
+## Few-Shot Prompting 
 
 The example few-shot prompts are stored in `post-examples.json`. 
 
@@ -134,12 +173,33 @@ For multiline examples, you can use multiple strings in the `post` array, and th
 uv run python main.py
 ```
 
-Example:
+Provide a website URL when prompted:
 
 ```text
-What do you want to post about? 
+Website URL: https://example.com/blog/article
+```
 
-Best Practices In Digital Evidence Collection
+Example output:
+
+```text
+Fetching website HTML...
+
+---------
+Extracting core content from the website...
+
+---------
+Summarizing the core content...
+
+---------
+Generating X post based on the summary...
+
+Generated X post:
+...
 ```
 
 
+## Things to Keep in Mind
+
+- The extraction quality depends on the structure of the target website.
+- Large web pages may increase token usage and response time.
+- The final post generation step uses few-shot prompting through examples stored in `post-examples.json`.
