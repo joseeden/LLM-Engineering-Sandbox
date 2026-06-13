@@ -1,8 +1,8 @@
-# Using HTTP Requests
+# Few-Shot Prompting with OpenAI API
 
-This example demonstrates how to interact with an OpenAI-compatible API using Python and the `requests` library.
+This example demonstrates how to implement few-shot prompting using the OpenAI API. 
 
-The script sends a prompt to a language model and generates a social media post based on a user-provided topic.
+Few-shot prompting is a technique where you provide the model with a few examples of the desired output format, which helps guide the model's response.
 
 
 ## Project Structure
@@ -12,6 +12,7 @@ The script sends a prompt to a language model and generates a social media post 
 ├── .env
 ├── .env.example
 ├── main.py
+├── post-examples.json
 ├── pyproject.toml
 ├── requirements.txt
 ├── uv.lock
@@ -53,8 +54,6 @@ The script sends a prompt to a language model and generates a social media post 
     ```env
     OPENAI_API_KEY=your_api_key_here
 
-    OPENAI_BASE_URL=https://api.openai.com/v1/responses
-
     MODEL_NAME=your_model_name_here
     ```
 
@@ -89,6 +88,47 @@ This will:
 3. Use the versions locked in `uv.lock`
 
 
+## Adding Examples 
+
+The example few-shot prompts are stored in `post-examples.json`. 
+
+You can modify this file to add more examples or change existing ones. 
+
+Each example should follow the structure:
+
+```json
+[
+  {
+    "post": [
+      "Best Practices In Digital Evidence Collection"
+    ]
+  },
+  {
+    "post": [
+      "How To Use LLMs For Data Analysis"
+    ]
+  }
+]
+```
+
+For multiline examples, you can use multiple strings in the `post` array, and they will be joined together when sent to the model.
+
+
+```json
+[
+  {
+    "post": [
+      "Cloud computing has changed the way organizations build and operate technology platforms.",
+      "",
+      "Some of the key benefits include:",
+      "",
+      "Faster deployment of services",
+      ...
+    ]
+  }
+]      
+```
+
 ## Run the Application
 
 ```bash
@@ -100,7 +140,7 @@ Example:
 ```text
 What do you want to post about? 
 
-The Role of Intelligent Mobility in Building Smarter Cities
+Best Practices In Digital Evidence Collection
 ```
 
 

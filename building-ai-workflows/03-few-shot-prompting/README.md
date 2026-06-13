@@ -1,8 +1,8 @@
-# Using HTTP Requests
+# Few-Shot Prompting with OpenAI API
 
-This example demonstrates how to interact with an OpenAI-compatible API using Python and the `requests` library.
+This example demonstrates how to implement few-shot prompting using the OpenAI API. 
 
-The script sends a prompt to a language model and generates a social media post based on a user-provided topic.
+Few-shot prompting is a technique where you provide the model with a few examples of the desired output format, which helps guide the model's response.
 
 
 ## Project Structure
@@ -52,8 +52,6 @@ The script sends a prompt to a language model and generates a social media post 
 
     ```env
     OPENAI_API_KEY=your_api_key_here
-
-    OPENAI_BASE_URL=https://api.openai.com/v1/responses
 
     MODEL_NAME=your_model_name_here
     ```

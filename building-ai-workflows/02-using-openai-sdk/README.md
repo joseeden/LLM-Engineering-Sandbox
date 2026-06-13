@@ -49,8 +49,8 @@ This example demonstrates how to interact with an OpenAI-compatible API using th
 
     ```env
     OPENAI_API_KEY=your_api_key_here
-
-    MODEL_NAME=gpt-5
+    
+    MODEL_NAME=your_model_name_here
     ```
 
 
@@ -95,19 +95,6 @@ Example:
 ```text
 What do you want to post about? 
 
-LLM and ML are useful skills that Cloud and DevOps Engineers must learn.
+How AI is Helping to Change Vulnerability Management
 ```
-
-Example output:
-
-> For cloud and DevOps engineers, mastering machine learning and large language models is increasingly essential.
-> 
-> ML and LLM skills unlock smarter automation, proactive issue detection, and faster recovery across cloud environments.
-> 
-> They enable you to build intelligent tooling, optimize costs, and strengthen security within your pipelines.
-> 
-> Integrating ML into CI/CD and infrastructure automation turns operational excellence into a repeatable advantage.
-> 
-> Invest in learning these skills now to future proof your career and elevate your team's impact.
-
 
