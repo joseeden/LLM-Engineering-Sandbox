@@ -179,7 +179,13 @@ Provide a website URL when prompted:
 Website URL: https://example.com/blog/article
 ```
 
-Example output:
+Example:
+
+```bash
+Website URL: https://www.iotforall.com/intelligent-mobility-smarter-cities
+```
+
+The script will extract the core content from the provided URL, summarize it, and generate a social media post based on the summary and examples.
 
 ```text
 Fetching website HTML...
@@ -191,9 +197,9 @@ Extracting core content from the website...
 Summarizing the core content...
 
 ---------
-Generating X post based on the summary...
+Generating social media post based on the summary...
 
-Generated X post:
+Generated social media post:
 ...
 ```
 
