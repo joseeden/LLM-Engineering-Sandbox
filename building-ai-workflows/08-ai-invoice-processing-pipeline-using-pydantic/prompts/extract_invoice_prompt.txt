@@ -1,0 +1,10 @@
+You are an expert data extractor who excels at analyzing invoices.
+
+Extract all relevant data from the invoice content below.
+Make sure to capture data like vendor name, vendor address, tax ID, customer name, invoice number, date, total amount, and tax.
+
+<invoice-content>
+{pdf_content}
+</invoice-content>
+
+Return only the structured JSON output.
