@@ -1,5 +1,7 @@
 # Few-Shot Prompting with OpenAI API
 
+## Overview 
+
 This example demonstrates how to implement few-shot prompting using the OpenAI API. 
 
 Few-shot prompting is a technique where you provide the model with a few examples of the desired output format, which helps guide the model's response.

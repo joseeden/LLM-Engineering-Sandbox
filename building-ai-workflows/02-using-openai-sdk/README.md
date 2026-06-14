@@ -1,5 +1,7 @@
 # Using the OpenAI SDK
 
+## Overview 
+
 This example demonstrates how to interact with an OpenAI-compatible API using the official OpenAI Python SDK.
 
 ## Project Structure

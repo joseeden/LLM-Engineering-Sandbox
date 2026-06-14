@@ -1,0 +1,25 @@
+Write a complete blog post based on this outline.
+
+<outline>
+{outline}
+</outline>
+
+Use these example posts only as writing style references.
+
+<post-examples>
+{post_examples}
+</post-examples>
+
+Important rules:
+
+- Do not copy the outline structure directly.
+- Do not use headings like "Introduction", "Main points", or "Conclusion".
+- Do not reuse content from the example posts.
+- Use short paragraphs.
+- Add blank lines between ideas.
+- Use only simple bullet points.
+- Do not use sub-bullets.
+- Keep bullet points short.
+- Return raw markdown only.
+- Do not wrap the output in a code block.
+- Do not add explanations before or after the markdown.

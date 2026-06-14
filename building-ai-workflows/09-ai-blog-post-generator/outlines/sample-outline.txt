@@ -1,0 +1,21 @@
+Title: Why Running Local AI Models Is Useful for Developers
+
+Angle:
+Running local AI models helps developers learn how LLM workflows work without depending only on hosted APIs.
+
+Key ideas:
+- Local models are useful for learning and experimentation.
+- They help developers test prompts, workflows, and model behavior.
+- They can reduce API costs during early prototyping.
+- They are helpful when testing with private or sensitive data.
+- Hardware matters because small and large models behave differently.
+- Hosted APIs are still better for production reliability and stronger models.
+
+Writing style:
+- Use short paragraphs.
+- Add blank lines between ideas.
+- Use simple language.
+- Use bullet points only when useful.
+- Do not use sub-bullets.
+- Keep bullet points short.
+- Do not copy this outline directly.

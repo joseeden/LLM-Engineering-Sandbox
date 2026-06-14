@@ -1,5 +1,7 @@
 # Using HTTP Requests
 
+## Overview 
+
 This example demonstrates how to interact with an OpenAI-compatible API using Python and the `requests` library.
 
 The script sends a prompt to a language model and generates a social media post based on a user-provided topic.
