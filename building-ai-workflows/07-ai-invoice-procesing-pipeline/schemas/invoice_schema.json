@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "vendor": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "taxId": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "required": ["name", "address", "taxId"]
+    },
+    "customer": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "taxId": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "required": ["name", "address", "taxId"]
+    },
+    "invoiceNumber": { "type": "string" },
+    "date": { "type": "string" },
+    "totalAmount": { "type": "number" },
+    "tax": { "type": "number" }
+  },
+  "additionalProperties": false,
+  "required": [
+    "vendor",
+    "customer",
+    "invoiceNumber",
+    "date",
+    "totalAmount",
+    "tax"
+  ]
+}

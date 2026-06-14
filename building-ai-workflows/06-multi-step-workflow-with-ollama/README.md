@@ -88,13 +88,13 @@ This approach allows each step to focus on a specific task, which often produces
     curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
 
-4. Verify installation:
+3. Verify installation:
 
     ```bash
     uv --version
     ```
 
-5. Install Dependencies
+4. Install Dependencies
 
     From the project directory, run:
 
