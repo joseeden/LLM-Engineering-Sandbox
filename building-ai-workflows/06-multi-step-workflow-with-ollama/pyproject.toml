@@ -8,4 +8,5 @@ dependencies = [
     "requests",
     "openai",
     "python-dotenv",
+    "beautifulsoup4"
 ]    

@@ -203,6 +203,12 @@ Generated social media post:
 ...
 ```
 
+<div class='img-center'>
+
+![](../images/1406206-multi-step-workflow-ai-content-processing.gif)
+
+</div>
+
 
 ## Things to Keep in Mind
 
