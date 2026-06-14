@@ -81,7 +81,6 @@ ai-blog-post-generator/
 │   └── user_prompt.txt
 │
 ├── pyproject.toml
-├── uv.lock
 ├── main.py
 └── README.md
 ```
@@ -139,16 +138,7 @@ ai-blog-post-generator/
     uv --version
     ```
 
-5. Install SQLite CLI (Optional, for database validation)
-
-    Linux / macOS
-
-    ```bash
-    sudo apt update -y
-    sudo apt install -y sqlite3
-    ```
-
-6. Install Dependencies
+5. Install Dependencies
 
     From the project directory, run:
 

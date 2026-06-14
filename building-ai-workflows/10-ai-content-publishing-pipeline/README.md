@@ -33,26 +33,36 @@ This project shows how AI can help automate those supporting steps while still k
 
 ```text
 ai-content-publishing-workflow/
-├── outlines/
+│
+├── linkedin-post-examples
+│   ├── cloud-computing.txt
+│   └── devops.txt
+
+├── outlines
 │   └── sample-outline.txt
-├── posts-examples/
-├── linkedin-post-examples/
-├── prompts/
+│
+├── posts-examples
+│   ├── cybersecurity-basics.mdx
+│   ├── iot-edge-monitoring.md
+│   └── running-consistency.mdx
+│
+├── prompts
 │   ├── article_developer_prompt.txt
-│   ├── article_user_prompt.txt
 │   ├── article_improvement_prompt.txt
+│   ├── article_user_prompt.txt
 │   ├── evaluation_developer_prompt.txt
 │   ├── evaluation_user_prompt.txt
-│   ├── thumbnail_prompt.txt
 │   ├── linkedin_developer_prompt.txt
-│   └── linkedin_user_prompt.txt
+│   ├── linkedin_user_prompt.txt
+│   └── thumbnail_prompt.txt
+│
 ├── posts-to-publish/
 ├── thumbnails/
 ├── linkedin-posts/
-├── main.py
-├── .env
+│
 ├── pyproject.toml
-└── uv.lock
+├── main.py
+└── README.md
 ```
 
 ## Prerequisites
@@ -112,16 +122,8 @@ ai-content-publishing-workflow/
     uv --version
     ```
 
-5. Install SQLite CLI (Optional, for database validation)
 
-    Linux / macOS
-
-    ```bash
-    sudo apt update -y
-    sudo apt install -y sqlite3
-    ```
-
-6. Install Dependencies
+5. Install Dependencies
 
     From the project directory, run:
 
