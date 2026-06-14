@@ -92,7 +92,7 @@ ai-blog-post-generator/
 
     ```bash
     git clone https://github.com/joseeden/llm-engineering-sandbox
-    cd project-llm-engineering-sandbox/building-ai-workflows/08-ai-invoice-processing-pipeline-using-pydantic
+    cd project-llm-engineering-sandbox/building-ai-workflows/09-ai-blog-post-generator
     ```
 
 2. Copy the environment file
