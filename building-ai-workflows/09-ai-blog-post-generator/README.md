@@ -63,20 +63,27 @@ The resulting file can be reviewed, edited, or published directly.
 
 ```text
 ai-blog-post-generator/
-├── outlines/
+│
+├── outlines
 │   └── sample-outline.txt
-├── posts-examples/
+│
+├── posts-examples
 │   ├── cybersecurity-basics.mdx
 │   ├── iot-edge-monitoring.md
 │   └── running-consistency.mdx
-├── posts-to-publish/
-├── prompts/
+│
+├── posts-to-publish
+│   ├── 15062026-why-running-local-ai-models-is-useful-for-developers-01.md
+│   └── 15062026-why-running-local-ai-models-is-useful-for-developers-02.md
+│
+├── prompts
 │   ├── developer_prompt.txt
 │   └── user_prompt.txt
-├── main.py
-├── .env
+│
 ├── pyproject.toml
-└── uv.lock
+├── uv.lock
+├── main.py
+└── README.md
 ```
 
 ## Prerequisites

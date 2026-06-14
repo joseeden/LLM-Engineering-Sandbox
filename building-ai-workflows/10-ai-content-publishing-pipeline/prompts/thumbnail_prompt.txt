@@ -1,0 +1,11 @@
+Generate a clean blog thumbnail image for the following article.
+
+The image should be simple, modern, and not crowded.
+
+Do not include small unreadable text.
+
+Use a visual concept that represents the main topic of the article.
+
+<article>
+{article}
+</article>
