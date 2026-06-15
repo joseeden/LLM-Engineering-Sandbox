@@ -1,0 +1,31 @@
+Improve the blog post below using the feedback provided.
+
+<article>
+{article}
+</article>
+
+<feedback>
+{feedback}
+</feedback>
+
+The improved version should still follow this original outline.
+
+<outline>
+{outline}
+</outline>
+
+Use these example posts only as writing style references.
+
+<post-examples>
+{post_examples}
+</post-examples>
+
+Important rules:
+
+- Keep the article clear and easy to read.
+- Use short paragraphs.
+- Add blank lines between ideas.
+- Use simple bullet points only when useful.
+- Do not use sub-bullets.
+- Do not copy the example posts.
+- Return raw markdown only.
