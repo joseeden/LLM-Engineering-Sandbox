@@ -155,7 +155,7 @@ Before running the thumbnail generation step:
 
 <div class='img-center'>
 
-![](/img/docs/Screenshot2026-06-15004842.png)
+![](../images/Screenshot2026-06-15004842.png)
 
 </div>
 

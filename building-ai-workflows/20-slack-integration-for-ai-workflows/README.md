@@ -123,7 +123,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](/img/docs/Screenshot2026-06-15080319.png)
+    ![](../images/Screenshot2026-06-15080319.png)
 
     </div>
 
@@ -187,7 +187,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](/img/docs/Screenshot2026-06-15081045.png)
+    ![](../images/Screenshot2026-06-15081045.png)
 
     </div>
 
@@ -206,7 +206,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](/img/docs/Screenshot2026-06-15081256.png)
+    ![](../images/Screenshot2026-06-15081256.png)
 
     </div>
 
@@ -221,7 +221,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](/img/docs/Screenshot2026-06-15081527.png)
+    ![](../images/Screenshot2026-06-15081527.png)
 
     </div>
 
@@ -245,7 +245,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](/img/docs/Screenshot2026-06-15081731.png)
+    ![](../images/Screenshot2026-06-15081731.png)
 
     </div>
 
@@ -282,7 +282,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](/img/docs/Screenshot2026-06-15082405.png)
+    ![](../images/Screenshot2026-06-15082405.png)
 
     </div>
 
@@ -377,7 +377,7 @@ Before running the thumbnail generation step:
 
 <div class='img-center'>
 
-![](/img/docs/Screenshot2026-06-15004842.png)
+![](../images/Screenshot2026-06-15004842.png)
 
 </div>
 
@@ -494,7 +494,7 @@ Hello from test-slack.py
 
 <div class='img-center'>
 
-![](/img/docs/Screenshot2026-06-15084206.png)
+![](../images/Screenshot2026-06-15084206.png)
 
 </div>
 
@@ -598,7 +598,7 @@ Lastly, check your Slack channel to verify that the notification was posted succ
 
 <div class='img-center'>
 
-![](/img/docs/Screenshot2026-06-15085220.png)
+![](../images/Screenshot2026-06-15085220.png)
 
 </div>
 
