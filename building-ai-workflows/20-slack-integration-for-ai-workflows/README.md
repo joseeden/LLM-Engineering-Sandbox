@@ -40,7 +40,9 @@ slack-integration-for-ai-workflows/
 │   └── devops.txt
 
 ├── outlines
-│   └── sample-outline.txt
+│   ├── outline-cloud-computing.txt
+│   ├── outline-marathon.txt
+│   └── outline-ruby.txt
 │
 ├── posts-examples
 │   ├── cybersecurity-basics.mdx
@@ -355,6 +357,7 @@ Environment setup:
     1. Create a virtual environment if needed
     2. Install all project dependencies
     3. Use the versions locked in `uv.lock`
+    4. 
 
 
 ### Image Generation Requirements

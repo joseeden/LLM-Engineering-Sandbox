@@ -1,0 +1,18 @@
+Generate a LinkedIn post based on this blog article.
+
+<article>
+{article}
+</article>
+
+Use these examples only as writing style references.
+
+<linkedin-post-examples>
+{linkedin_examples}
+</linkedin-post-examples>
+
+Important rules:
+
+- Do not copy the example posts.
+- Keep the post concise.
+- Make it sound natural.
+- Return only the LinkedIn post.

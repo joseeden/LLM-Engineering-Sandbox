@@ -1,0 +1,14 @@
+Evaluate this blog post.
+
+<outline>
+{outline}
+</outline>
+
+<article>
+{article}
+</article>
+
+Return structured feedback with:
+
+- whether the article needs improvement
+- short feedback explaining what should be improved
