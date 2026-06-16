@@ -57,6 +57,21 @@ def load_prompt(prompt_file: Path) -> str:
     return prompt_file.read_text(encoding="utf-8")
 
 
+def get_function_call(response):
+    for output in response.output:
+        if output.type == "function_call":
+            return output
+
+    return None
+
+
+def print_response_text(response):
+    if response.output_text:
+        print(response.output_text)
+    else:
+        print("I did not receive a final text answer. Please try again.")
+
+
 def execute_tool_call(tool_call) -> str | float:
     """
     Executes a tool call and returns the output.
@@ -81,8 +96,8 @@ def main():
 
     while True:
         user_input = input(
-            "Your question (type 'exit' to end the conversation): ")
-        if user_input == "exit":
+            "\nYour question (type 'q' to exit): ")
+        if user_input.strip().lower() == "q":
             break
 
         messages.append({"role": "user", "content": user_input})
@@ -92,25 +107,26 @@ def main():
             tools=tools,
         )
 
-        output = response.output[0]
         # add to chat history to keep track of the conversation
-        messages.append(output)
+        messages.extend(response.output)
 
-        if output.type != "function_call":
-            print(response.output_text)
+        function_call = get_function_call(response)
+
+        if function_call is None:
+            print_response_text(response)
             continue
 
-        tool_output = execute_tool_call(output)
+        tool_output = execute_tool_call(function_call)
         messages.append({
             "type": "function_call_output",
-            "call_id": output.call_id,
+            "call_id": function_call.call_id,
             "output": str(tool_output),
         })
         assistant_prompt = {
             "role": "developer",
             "content": load_prompt(ASST_PROMPT_FILE).format(
                 user_input=user_input,
-                tool_name=output.name,
+                tool_name=function_call.name,
                 tool_output=tool_output,
             ),
         }
@@ -119,10 +135,8 @@ def main():
             model=MODEL_NAME,
             input=messages + [assistant_prompt],
         )
-        messages.append(response.output[0])
-        print(response.output_text)
-
-    print(messages)
+        messages.extend(response.output)
+        print_response_text(response)
 
 
 if __name__ == "__main__":
