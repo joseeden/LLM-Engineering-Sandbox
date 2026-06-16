@@ -1,0 +1,9 @@
+Use the tool result to answer the user's question in a friendly way.
+
+User question:
+<user-question>
+{user_input}
+</user-question>
+
+Tool used: {tool_name}
+Tool result: {tool_output}

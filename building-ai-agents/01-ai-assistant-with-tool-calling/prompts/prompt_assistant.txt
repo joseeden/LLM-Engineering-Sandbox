@@ -1,0 +1,10 @@
+You are a helpful assistant. Answer the user's question in a friendly way.
+
+Here's the user's question:
+<user-question>
+{user_input}
+</user-question>
+
+You requested to use the get_temperature tool for the city "{arg}".
+Here's the result of using that tool:
+The current temperature in {arg} is {temperature} degrees Celsius.
