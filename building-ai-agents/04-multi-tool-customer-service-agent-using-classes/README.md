@@ -362,15 +362,20 @@ Jon Snow 1357
 
 Try asking for a refund first. The assistant should ask for identity verification before sharing order details or checking refund eligibility.
 
-## Notes
+<div class='img-center'>
 
-This version is better organized than keeping every class in `main.py`.
+![](../images/17062026-multitool-agent-2.GIF)
 
-Keeping the classes in separate files makes the project easier to manage because:
+</div>
+
+
+## Notes on Externalized Files
+
+The prompts, tool schemas, SQL commands, and seed data are externalized into folders so the Python files stay focused on application logic.
 
 - `main.py` stays small.
 - Agent behavior is isolated in `agents.py`.
 - Tool behavior is isolated in `customer_service_tools.py`.
-- Prompts, SQL, seed data, and tool behavior can be changed without editing the core agent loop.
+- External files can be changed without editing the core agent loop.
 
 This is still a learning project, but the structure is closer to how a larger agent application would be organized.
