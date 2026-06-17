@@ -1,0 +1,98 @@
+[
+  {
+    "type": "function",
+    "name": "verify_customer",
+    "description": "Verifies a customer's identity using their full name and PIN.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The customer's full name, such as John Doe."
+        },
+        "pin": {
+          "type": "string",
+          "description": "The customer's PIN."
+        }
+      },
+      "additionalProperties": false,
+      "required": ["name", "pin"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "get_orders",
+    "description": "Retrieves the order history for a verified customer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "integer",
+          "description": "The customer's unique ID."
+        }
+      },
+      "additionalProperties": false,
+      "required": ["customer_id"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "check_refund_eligibility",
+    "description": "Checks if an order is eligible for a refund based on the order date.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "integer",
+          "description": "The customer's unique ID."
+        },
+        "order_id": {
+          "type": "integer",
+          "description": "The unique ID of the order."
+        }
+      },
+      "additionalProperties": false,
+      "required": ["customer_id", "order_id"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "issue_refund",
+    "description": "Issues a refund for an order.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "integer",
+          "description": "The customer's unique ID."
+        },
+        "order_id": {
+          "type": "integer",
+          "description": "The unique ID of the order."
+        }
+      },
+      "additionalProperties": false,
+      "required": ["customer_id", "order_id"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "share_feedback",
+    "description": "Allows a customer to provide feedback about their experience.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "integer",
+          "description": "The customer's unique ID."
+        },
+        "feedback": {
+          "type": "string",
+          "description": "The feedback text from the customer."
+        }
+      },
+      "additionalProperties": false,
+      "required": ["customer_id", "feedback"]
+    }
+  }
+]

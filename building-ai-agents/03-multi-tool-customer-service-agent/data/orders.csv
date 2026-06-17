@@ -1,0 +1,21 @@
+customer_id,days_ago,product_name,amount
+1,10,Laptop,1200.00
+2,5,Keyboard,75.00
+3,45,Mouse,25.00
+4,12,Winter Jacket,180.00
+5,32,Monitor,220.00
+6,7,Chemistry Set,95.00
+7,21,Office Chair,150.00
+8,3,Notebook,12.50
+9,60,Webcam,80.00
+10,18,Desk Lamp,35.00
+11,26,USB Hub,28.00
+12,40,Backpack,65.00
+13,2,Headphones,110.00
+14,14,Tablet Case,30.00
+15,50,Printer,140.00
+16,9,Smart Watch,199.00
+17,28,External Drive,89.00
+18,36,Book Stand,24.00
+19,16,Microphone,130.00
+20,23,Wireless Charger,45.00
