@@ -213,7 +213,28 @@ These records are stored in `dummy_database.db`, which is rebuilt each time the 
     19  Benjamin    Hall       3030
     20  Ava         Young      4040
     ```
+4. To check the orders in the `orders` table:
 
+    ```bash
+    sqlite3 -header -column dummy_database.db "SELECT * FROM orders;"  
+    ```
+
+    **Note:** There are 71 total orders, where each customer has more than one order. 
+
+    Output:
+
+    ```bash
+    id  customer_id  date                        product_name        amount
+    --  -----------  --------------------------  ------------------  ------
+    1   1            2026-06-07T15:49:41.102957  Laptop              1200.0
+    2   1            2026-05-03T15:49:41.102991  Mouse               25.0  
+    3   1            2026-06-13T15:49:41.103001  Laptop Stand        42.0  
+    4   2            2026-06-12T15:49:41.103007  Keyboard            75.0  
+    5   2            2026-05-17T15:49:41.103017  Desk Mat            22.0  
+    6   3            2026-05-03T15:49:41.103023  Mouse               25.0 
+    ....
+    ...
+    ```
 
 
 ### Tools
@@ -288,28 +309,21 @@ You can try asking for a refund:
 ```text
 Your input: I'd like to ask for a refund
 
-
 The assistant should ask for identity verification before sharing order details.
 
 You can test with the sample customers in `data/customers.csv`.
 
 ```text
-John Doe, PIN 1234
-Jane Smith, PIN 5678
+Jon Snow 1357
 ```
 
-## Validation
+If you prover incorrect information, the agent should deny access to order details.
 
-After running the app, the script creates a local SQLite database named `dummy_database.db`.
+Note that the agent remembers the conversation history, so if you ask for a refund and then verify your identity, it should be able to connect those steps and check your order history before checking refund eligibility.
 
-The database loads sample customers from `data/customers.csv` and creates sample orders for testing the agent.
+<div class='img-center'>
 
-The app should ask for verification before showing orders, and it should check refund eligibility before issuing a refund.
+![](../images/17062026-multitool-agent.gif)
 
-## Portfolio Note
+</div>
 
-This project is a useful AI agent lab.
-
-It demonstrates tool calling, customer verification, database access, refund policy checks, and prompt externalization.
-
-It is better as part of an AI agent learning collection than as a standalone flagship portfolio project.

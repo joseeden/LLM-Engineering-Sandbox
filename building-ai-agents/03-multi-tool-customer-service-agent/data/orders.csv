@@ -1,21 +1,72 @@
 customer_id,days_ago,product_name,amount
 1,10,Laptop,1200.00
+1,45,Mouse,25.00
+1,4,Laptop Stand,42.00
 2,5,Keyboard,75.00
+2,31,Desk Mat,22.00
 3,45,Mouse,25.00
+3,12,USB Cable,9.50
+3,3,Webcam Cover,6.00
+3,64,Monitor Arm,85.00
 4,12,Winter Jacket,180.00
+4,28,Travel Mug,18.00
+4,55,Gloves,24.00
+4,6,Notebook,12.50
+4,2,Phone Case,20.00
 5,32,Monitor,220.00
+5,9,HDMI Cable,14.00
 6,7,Chemistry Set,95.00
+6,22,Safety Goggles,18.00
+6,41,Lab Notebook,16.00
 7,21,Office Chair,150.00
+7,5,Coffee Mug,13.00
+7,72,Printer Paper,11.00
+7,14,Desk Organizer,29.00
+7,2,Sticky Notes,6.50
+7,35,Whiteboard Markers,8.00
 8,3,Notebook,12.50
+8,16,Pen Set,9.00
+8,44,Backpack,65.00
 9,60,Webcam,80.00
+9,8,Microphone,130.00
+9,27,Ring Light,45.00
+9,11,Tripod,38.00
 10,18,Desk Lamp,35.00
+10,6,Wireless Charger,45.00
 11,26,USB Hub,28.00
+11,2,External Drive,89.00
+11,38,Ethernet Cable,10.00
+11,17,Laptop Sleeve,32.00
+11,58,Portable SSD,119.00
 12,40,Backpack,65.00
+12,13,Water Bottle,19.00
+12,4,Travel Adapter,25.00
 13,2,Headphones,110.00
+13,19,Bluetooth Speaker,70.00
+13,33,Audio Cable,8.00
+13,48,Tablet Case,30.00
 14,14,Tablet Case,30.00
+14,23,Stylus,49.00
 15,50,Printer,140.00
+15,7,Ink Cartridge,39.00
+15,29,Printer Paper,11.00
+15,3,USB Cable,9.50
+15,67,Label Maker,55.00
 16,9,Smart Watch,199.00
+16,30,Watch Band,24.00
+16,1,Screen Protector,7.00
 17,28,External Drive,89.00
+17,12,USB Hub,28.00
+17,46,Keyboard,75.00
+17,5,Mouse Pad,12.00
+17,20,Monitor,220.00
+17,61,Laptop Stand,42.00
 18,36,Book Stand,24.00
+18,15,Desk Lamp,35.00
 19,16,Microphone,130.00
+19,8,Headphones,110.00
+19,52,Webcam,80.00
+19,24,Ring Light,45.00
 20,23,Wireless Charger,45.00
+20,4,Phone Case,20.00
+20,37,Power Bank,60.00
