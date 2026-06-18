@@ -68,7 +68,7 @@ The workflow runs in sequence, with each agent handling one focused responsibili
 4. The planner agent helps refine the plan and can store, list, or delete saved plans.
 5. The user types `accept` when the plan is ready.
 6. The web search agent turns the plan into structured search terms.
-~~7. The app calls the Brave Search API for each search term and gets back results.~~
+7. ~~The app calls the Brave Search API for each search term and gets back results.~~
 8. The app calls the local SearxNG search API for each search term.
 9. The summary report agent writes a Markdown report from the search results.
 10. The app saves the report to `reports/summary_report.md`.
@@ -114,102 +114,6 @@ Note that SearxNG needs to run locally first. The installation steps are added i
 └── README.md
 ```
 
-## Main Python Files
-
-### `main.py`
-
-This is the entry point.
-
-It loads environment variables, initializes the database, runs the three agents, and saves the final report.
-
-### `agents.py`
-
-This contains the agent classes.
-
-| Class                  | Purpose                                                                   |
-| ---------------------- | ------------------------------------------------------------------------- |
-| `Agent`                | Base class for shared OpenAI client, prompt loading, messages, and tools. |
-| `ResearchPlannerAgent` | Creates a research plan with the user and can call database tools.         |
-| `WebSearchAgent`       | Converts the accepted plan into search terms and runs web searches.        |
-| `SummaryReportAgent`   | Converts search results into a Markdown report.                           |
-
-### `tools.py`
-
-This contains the research planning tools. 
-
-The tool classes own both schema metadata and execution logic.
-
-| Class                    | Purpose                                      |
-| ------------------------ | -------------------------------------------- |
-| `Tool`                   | Base class for tool schemas and execution.   |
-| `StoreResearchPlanTool`  | Stores a research plan in SQLite.            |
-| `GetResearchPlansTool`   | Retrieves saved research plans.              |
-| `DeleteResearchPlanTool` | Deletes a saved research plan.               |
-
-
-
-### `database.py`
-
-This handles the SQLite database. 
-
-It reads SQL commands from the `sql/` folder instead of keeping SQL strings inside the Python code.
-
-### `search_client.py`
-
-~~This calls the Brave Search API.~~
-~~It expects `BRAVE_API_KEY` and `BRAVE_BASE_URL` in the environment, with defaults for the free tier.~~
-
-**EDIT:** After Brave Search API removed the free tier, this project has been updated to use SearxNG as a free local search engine API instead.
-
-The `search_client.py` calls the local SearxNG search API.
-
-It uses `SEARXNG_URL` from the environment and defaults to `http://localhost:8080`.
-
-```python
-SEARXNG_URL = os.getenv("SEARXNG_URL", "http://localhost:8080")
-```
-
-### `schemas.py`
-
-This contains the Pydantic model used for structured search planning.
-
-`SearchConfig` defines the structured output expected from the model: 
-
-- Search terms
-- Optional SearxNG time range
-
-The `agents.py` file then imports `SearchConfig` from `schemas.py` to validate the output of the `WebSearchAgent`. 
-
-
-## Prompts
-
-The `prompts/` folder contains the agent instructions.
-
-```text
-prompts/
-├── research-planner-agent.txt
-├── summary-report-agent.txt
-└── web-search-agent.txt
-```
-
-This keeps agent behavior easy to edit without changing Python code.
-
-## SQL Files
-
-The `sql/` folder contains database setup and query commands.
-
-This keeps database commands separate from the application logic.
-
-```text
-sql/
-├── create_research_plans_table.sql
-├── delete_research_plan.sql
-├── get_research_plans.sql
-└── insert_research_plan.sql
-```
-
-The local SQLite database is stored in `research.db`, which is ignored by `.gitignore`.
-
 ## Prerequisites
 
 - [Python 3.12+](https://www.python.org/downloads/)
@@ -221,6 +125,8 @@ The local SQLite database is stored in `research.db`, which is ignored by `.giti
 - [jq](https://jqlang.org/download/)
 
 ## Setup
+
+### Environtment 
 
 1. Go to this project folder.
 
@@ -256,7 +162,7 @@ The local SQLite database is stored in `research.db`, which is ignored by `.giti
     ```
 
 
-## Setup - Searx 
+### Searx 
 
 Since Brave Search API has removed the free tier, we'll use SearxNG as an alternative search engine API that can run locally for free.
 
@@ -445,6 +351,104 @@ This project performs live web search through the local SearxNG container, so Do
     docker start searxng-local
     docker logs searxng-local
     ```
+
+
+## Main Python Files
+
+### `main.py`
+
+This is the entry point.
+
+It loads environment variables, initializes the database, runs the three agents, and saves the final report.
+
+### `agents.py`
+
+This contains the agent classes.
+
+| Class                  | Purpose                                                                   |
+| ---------------------- | ------------------------------------------------------------------------- |
+| `Agent`                | Base class for shared OpenAI client, prompt loading, messages, and tools. |
+| `ResearchPlannerAgent` | Creates a research plan with the user and can call database tools.         |
+| `WebSearchAgent`       | Converts the accepted plan into search terms and runs web searches.        |
+| `SummaryReportAgent`   | Converts search results into a Markdown report.                           |
+
+### `tools.py`
+
+This contains the research planning tools. 
+
+The tool classes own both schema metadata and execution logic.
+
+| Class                    | Purpose                                      |
+| ------------------------ | -------------------------------------------- |
+| `Tool`                   | Base class for tool schemas and execution.   |
+| `StoreResearchPlanTool`  | Stores a research plan in SQLite.            |
+| `GetResearchPlansTool`   | Retrieves saved research plans.              |
+| `DeleteResearchPlanTool` | Deletes a saved research plan.               |
+
+
+
+### `database.py`
+
+This handles the SQLite database. 
+
+It reads SQL commands from the `sql/` folder instead of keeping SQL strings inside the Python code.
+
+### `search_client.py`
+
+~~This calls the Brave Search API.~~
+~~It expects `BRAVE_API_KEY` and `BRAVE_BASE_URL` in the environment, with defaults for the free tier.~~
+
+**EDIT:** After Brave Search API removed the free tier, this project has been updated to use SearxNG as a free local search engine API instead.
+
+The `search_client.py` calls the local SearxNG search API.
+
+It uses `SEARXNG_URL` from the environment and defaults to `http://localhost:8080`.
+
+```python
+SEARXNG_URL = os.getenv("SEARXNG_URL", "http://localhost:8080")
+```
+
+### `schemas.py`
+
+This contains the Pydantic model used for structured search planning.
+
+`SearchConfig` defines the structured output expected from the model: 
+
+- Search terms
+- Optional SearxNG time range
+
+The `agents.py` file then imports `SearchConfig` from `schemas.py` to validate the output of the `WebSearchAgent`. 
+
+
+## Prompts
+
+The `prompts/` folder contains the agent instructions.
+
+```text
+prompts/
+├── research-planner-agent.txt
+├── summary-report-agent.txt
+└── web-search-agent.txt
+```
+
+This keeps agent behavior easy to edit without changing Python code.
+
+## SQL Files
+
+The `sql/` folder contains database setup and query commands.
+
+This keeps database commands separate from the application logic.
+
+```text
+sql/
+├── create_research_plans_table.sql
+├── delete_research_plan.sql
+├── get_research_plans.sql
+└── insert_research_plan.sql
+```
+
+The local SQLite database is stored in `research.db`, which is ignored by `.gitignore`.
+
 
 
 ## Run The Application
