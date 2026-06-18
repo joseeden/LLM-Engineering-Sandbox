@@ -159,11 +159,7 @@ It reads SQL commands from the `sql/` folder instead of keeping SQL strings insi
 ~~This calls the Brave Search API.~~
 ~~It expects `BRAVE_API_KEY` and `BRAVE_BASE_URL` in the environment, with defaults for the free tier.~~
 
-:::info 
-
-After Brave Search API removed the free tier, this project has been updated to use SearxNG as a free local search engine API instead.
-
-:::
+**EDIT:** After Brave Search API removed the free tier, this project has been updated to use SearxNG as a free local search engine API instead.
 
 The `search_client.py` calls the local SearxNG search API.
 
