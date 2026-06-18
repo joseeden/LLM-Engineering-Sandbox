@@ -1,0 +1,12 @@
+[project]
+name = "05-multi-agent-research-workflow"
+version = "0.1.0"
+description = "A multi-agent research workflow using OpenAI, SearxNG, SQLite, and externalized prompts and SQL."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.91.0",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.4",
+]

@@ -301,10 +301,11 @@ These records are stored in `dummy_database.db`, which is rebuilt each time the 
 
 ## Prerequisites
 
-- Python 3.12+
-- `uv`
-- An OpenAI account
-- OpenAI API credentials
+- [Python 3.12+](https://www.python.org/downloads/)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
+- [An OpenAI account](https://platform.openai.com/login)
+- [OpenAI API credentials](https://platform.openai.com/account/api-keys)
+
 
 ## Setup
 
