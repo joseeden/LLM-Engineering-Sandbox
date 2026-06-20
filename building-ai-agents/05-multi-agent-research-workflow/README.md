@@ -196,6 +196,8 @@ This project performs live web search through the local SearxNG container, so Do
 
 2. Create a local directory for the SearxNG configuration.
 
+    **EDIT:** If you are using this repository, the `searxng/` directory with the example config file is already included. You can skip this step if that's the case.
+
     Windows/PowerShell: 
 
     ```powershell

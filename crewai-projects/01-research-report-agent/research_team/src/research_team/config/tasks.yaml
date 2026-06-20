@@ -1,0 +1,18 @@
+research_task:
+  description: >
+    Conduct web research about {topic} using the available SearXNG search tool.
+    Make sure you find interesting, current, and relevant information given
+    the current year is {current_year}. Include the source URL for each finding.
+  expected_output: >
+    A list of 10 relevant findings about {topic}. Each finding must include a
+    short explanation and at least one source URL.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the research findings you received and expand them into a clear report.
+    Preserve useful source URLs so the reader can verify the important claims.
+  expected_output: >
+    A Markdown report with a title, summary, main sections, key takeaways, and a
+    sources section. Do not wrap the report in markdown code fences.
+  agent: reporting_analyst

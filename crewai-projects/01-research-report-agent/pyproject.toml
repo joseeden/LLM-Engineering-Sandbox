@@ -1,0 +1,10 @@
+[project]
+name = "01-research-report-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.0.0,<2.0.0",
+    "crewai[tools]>=0.130.0,<1.0.0"
+]
