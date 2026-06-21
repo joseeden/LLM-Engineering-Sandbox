@@ -13,6 +13,10 @@ reporting_task:
     Review the research findings you received and expand them into a clear report.
     Preserve useful source URLs so the reader can verify the important claims.
   expected_output: >
-    A Markdown report with a title, summary, main sections, key takeaways, and a
-    sources section. Do not wrap the report in markdown code fences.
+    A complete standalone Markdown report. The report must include the full
+    content directly in the answer, not references to previous messages,
+    earlier output, or "above" content. Include a title, executive summary,
+    main sections, practical recommendations, key takeaways, and a sources
+    section with URLs.
   agent: reporting_analyst
+

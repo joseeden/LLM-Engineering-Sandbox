@@ -751,13 +751,23 @@ cd project-llm-engineering-sandbox/crewai-projects/01-research-report-agent/rese
 uv run crewai run
 ```
 
+**Note:** If you activated the virtual environment created by `uv`, you can run the `crewai` command directly:
+
+```bash
+crewai run  
+```
+
 <!-- You can also run the Python entry point directly:
 
 ```bash
 uv run run_crew
 ``` -->
 
+It will prompt you to enter a research topic and current year:
 
+```bash
+Enter the research topic: 
+```
 
 After the workflow completes, the final report will be written to:
 
@@ -768,3 +778,9 @@ report.md
 Note that the report should be treated as a first draft. 
 
 Review the claims, add citations where needed, and refine the structure before publishing or reusing it.
+
+<div class='img-center'>
+
+![](../images/21062026-crewai-research-agent.gif)
+
+</div>
