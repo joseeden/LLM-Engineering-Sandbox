@@ -34,7 +34,7 @@ The diagram below shows where the human review loop fits into the content genera
 
 <div class='img-center'>
 
-![](../images/project-ai-content-workflow-hitl.png)
+![](../../images/project-ai-content-workflow-hitl.png)
 
 </div>
 

@@ -34,7 +34,7 @@ The diagram below shows how the content workflow connects to the Slack notificat
 
 <div class='img-center'>
 
-![](../images/project-slack-ai-workflow-notification.png)
+![](../../images/project-slack-ai-workflow-notification.png)
 
 </div>
 
