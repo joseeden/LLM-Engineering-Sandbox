@@ -24,7 +24,7 @@ The diagram below shows the end-to-end invoice processing path from PDF input to
 
 <div class='img-center'>
 
-![](../images/project-ai-invoice-processing-pipeline.png)
+![](../../images/project-ai-invoice-processing-pipeline.png)
 
 </div>
 
