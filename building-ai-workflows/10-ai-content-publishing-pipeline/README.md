@@ -25,7 +25,7 @@ The diagram below gives a quick view of how the content workflow moves from outl
 
 <div class='img-center'>
 
-![](../images/project-ai-content-publishing-workflow.png)
+![](../../images/project-ai-content-publishing-workflow.png)
 
 </div>
 
