@@ -25,6 +25,12 @@ The workflow runs in a simple sequence.
 6. The reporting analyst writes the final Markdown report with sources.
 7. The report is saved as `report.md`
 
+<div class='img-center'>
+
+![](../../images/project-crewai-research-report-agent.png)
+
+</div>
+
 ## Use Case
 
 Research tasks often involve two separate activities:
