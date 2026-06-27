@@ -17,28 +17,6 @@ The WhatsApp message contains a summary of the generated outputs, which makes it
 
 This project uses the [Meta WhatsApp Cloud API.](https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started)
 
-## Scope
-
-This project demonstrates how to send WhatsApp notifications from an AI workflow using the WhatsApp Cloud API.
-
-Included:
-
-- WhatsApp Cloud API setup
-- Sending WhatsApp messages from Python
-- Workflow completion notifications
-- Custom text message examples
-
-Not Included:
-
-- Receiving WhatsApp messages
-- Triggering workflows from WhatsApp
-- Human-in-the-loop approvals
-- Interactive buttons
-- Webhook processing
-- Production message templates
-- Production WhatsApp Business setup
-
-Some topics are intentionally excluded to keep the example focused on outbound workflow notifications.
 
 ## Workflow
 
@@ -63,6 +41,30 @@ The diagram below shows how the content workflow connects to the WhatsApp Cloud 
 ![](../../images/project-whatsapp-ai-workflow-notification.png)
 
 </div>
+
+## Scope
+
+<!-- This project demonstrates how to send WhatsApp notifications from an AI workflow using the WhatsApp Cloud API. -->
+
+Some topics are intentionally excluded to keep the example focused on outbound workflow notifications.
+
+Included:
+
+- WhatsApp Cloud API setup
+- Sending WhatsApp messages from Python
+- Workflow completion notifications
+- Custom text message examples
+
+Not Included:
+
+- Receiving WhatsApp messages
+- Triggering workflows from WhatsApp
+- Human-in-the-loop approvals
+- Interactive buttons
+- Webhook processing
+- Production message templates
+- Production WhatsApp Business setup
+
 
 ## Project Structure
 
