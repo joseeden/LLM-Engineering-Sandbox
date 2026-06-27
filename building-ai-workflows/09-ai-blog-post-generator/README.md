@@ -18,7 +18,15 @@ The workflow processes content in multiple steps.
 4. Generate a new blog post
 5. Save the generated post as a Markdown file
 
-Each step has a single responsibility, which makes the workflow easier to understand and maintain.
+<!-- Each step has a single responsibility, which makes the workflow easier to understand and maintain. -->
+
+The diagram below shows the path from outline and style examples to the generated Markdown draft.
+
+<div class='img-center'>
+
+![](../images/project-ai-blog-post-generator.png)
+
+</div>
 
 ### 1. Outline Processing
 

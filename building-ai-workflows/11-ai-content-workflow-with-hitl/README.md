@@ -4,7 +4,7 @@
 
 This project is an enhancement of the previous **AI Content Publishing Workflow**.
 
-The previous workflow multiple content assets from a single outline:
+The previous workflow generated multiple content assets from a single outline:
 
 - Blog post
 - Thumbnail image
@@ -12,7 +12,7 @@ The previous workflow multiple content assets from a single outline:
 
 This version adds a **review and feedback stage**, which allows the generated blog post to be evaluated, accepted, or improved before the final publishing assets are created.
 
-The goal is to create a **human-in-the-loop*- content workflow where AI can generate and review content, while the user still controls the final output.
+The goal is to create a **human-in-the-loop** workflow where AI can generate and review content, while the user still controls the final output.
 
 ## Workflow
 
@@ -28,7 +28,15 @@ The workflow processes content in multiple steps.
 8. Generate a LinkedIn post
 9. Save all generated outputs
 
-Each step has a single responsibility, which makes the workflow easier to understand and maintain.
+<!-- Each step has a single responsibility, which makes the workflow easier to understand and maintain. -->
+
+The diagram below shows where the human review loop fits into the content generation workflow.
+
+<div class='img-center'>
+
+![](../images/project-ai-content-workflow-hitl.png)
+
+</div>
 
 ### 1. Outline Processing
 

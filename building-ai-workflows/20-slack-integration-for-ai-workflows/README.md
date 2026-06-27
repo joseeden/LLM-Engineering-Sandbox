@@ -28,7 +28,15 @@ The workflow processes content in multiple steps.
 8. Save all outputs to local files
 9. Send a Slack notification
 
-Each step has a single responsibility, which makes the workflow easier to understand and maintain.
+<!-- Each step has a single responsibility, which makes the workflow easier to understand and maintain. -->
+
+The diagram below shows how the content workflow connects to the Slack notification step after the generated assets are saved.
+
+<div class='img-center'>
+
+![](../images/project-slack-ai-workflow-notification.png)
+
+</div>
 
 ## Project Structure
 
@@ -601,4 +609,3 @@ Lastly, check your Slack channel to verify that the notification was posted succ
 ![](../images/Screenshot2026-06-15085220.png)
 
 </div>
-

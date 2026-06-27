@@ -27,8 +27,15 @@ The workflow processes each customer message in a tool-calling loop.
 5. Send the tool result back to the model
 6. Print the final assistant response
 
-Each tool has a focused responsibility, and the agent combines them during the conversation.
+<!-- Each tool has a focused responsibility, and the agent combines them during the conversation. -->
 
+The diagram below shows how the agent loops between the user, the model, backend tools, and the customer/order database.
+
+<div class='img-center'>
+
+![](../images/project-multi-tool-customer-service-agent.png)
+
+</div>
 
 ## Project Structure
 
@@ -326,4 +333,3 @@ Note that the agent remembers the conversation history, so if you ask for a refu
 ![](../images/17062026-multitool-agent.gif)
 
 </div>
-

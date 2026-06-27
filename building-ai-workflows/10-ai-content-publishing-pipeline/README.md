@@ -19,7 +19,15 @@ The workflow processes content in multiple steps.
 7. Generate a LinkedIn post
 8. Save all outputs to local files
 
-Each step has a single responsibility, which makes the workflow easier to understand and maintain.
+<!-- Each step has a single responsibility, which makes the workflow easier to understand and maintain. -->
+
+The diagram below gives a quick view of how the content workflow moves from outline input to publishable assets.
+
+<div class='img-center'>
+
+![](../images/project-ai-content-publishing-workflow.png)
+
+</div>
 
 ## Use Case
 

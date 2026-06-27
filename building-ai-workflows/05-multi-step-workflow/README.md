@@ -1,4 +1,4 @@
-# Multi-Step AI Workflow with OpenAI API
+# AI Content Processing: Multi-Step AI Workflow with OpenAI API
 
 ## Overview 
 
@@ -25,24 +25,11 @@ Instead of sending a single prompt to a model, the application breaks the task i
     
 The output of each step is passed to the next stage of the workflow:
 
-```text
-Website URL
-    │
-    ▼
-Fetch HTML
-    │
-    ▼
-Extract Core Content
-    │
-    ▼
-Summarize Content
-    │
-    ▼
-Generate Social Media Post
-    │
-    ▼
-Final Output
-``` 
+<div class='img-center'>
+
+![](../images/project-ai-content-processing-workflow.png)
+
+</div>
 
 This approach allows each step to focus on a specific task, which often produces more reliable results than handling everything in a single prompt.
 

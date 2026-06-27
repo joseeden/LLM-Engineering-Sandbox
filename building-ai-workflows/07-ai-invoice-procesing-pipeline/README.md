@@ -18,7 +18,15 @@ The workflow processes invoices in multiple steps.
 4. Extract invoice details as structured JSON 
 5. Store the extracted data in SQLite         
 
-Each step has a single responsibility, which makes the workflow easier to understand and maintain.
+<!-- Each step has a single responsibility, which makes the workflow easier to understand and maintain. -->
+
+The diagram below shows the end-to-end invoice processing path from PDF input to stored structured records.
+
+<div class='img-center'>
+
+![](../images/project-ai-invoice-processing-pipeline.png)
+
+</div>
 
 ### 1. Using Code to Extract Content 
 

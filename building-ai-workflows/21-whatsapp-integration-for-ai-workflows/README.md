@@ -54,34 +54,15 @@ The workflow processes content in multiple steps.
 8. Save all outputs to local files
 9. Send a WhatsApp notification
 
-Each step has a single responsibility, which makes the workflow easier to understand and maintain.
+<!-- Each step has a single responsibility, which makes the workflow easier to understand and maintain. -->
 
-<!-- ## Architecture
+The diagram below shows how the content workflow connects to the WhatsApp Cloud API after the generated assets are saved.
 
-```text
-Outline
-    │
-    ▼
-Generate Blog Post
-    │
-    ▼
-Evaluate Article
-    │
-    ▼
-Improve Article
-    │
-    ▼
-Generate Thumbnail
-    │
-    ▼
-Generate LinkedIn Post
-    │
-    ▼
-Save Outputs
-    │
-    ▼
-Send WhatsApp Notification
-``` -->
+<div class='img-center'>
+
+![](../images/project-whatsapp-ai-workflow-notification.png)
+
+</div>
 
 ## Project Structure
 
@@ -792,4 +773,3 @@ LinkedIn post: {{3}}
 ```
 
 This allows your application to send workflow notifications even when the user has not recently messaged the WhatsApp business number.
-
