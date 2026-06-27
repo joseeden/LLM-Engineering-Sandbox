@@ -311,7 +311,7 @@ To enable the researcher agent to search the web, it needs to use a search tool.
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-18005310.png)
+    ![](../../images/Screenshot2026-06-18005310.png)
 
     </div>
 
@@ -781,6 +781,6 @@ Review the claims, add citations where needed, and refine the structure before p
 
 <div class='img-center'>
 
-![](../images/21062026-crewai-research-agent.gif)
+![](../../images/21062026-crewai-research-agent.gif)
 
 </div>

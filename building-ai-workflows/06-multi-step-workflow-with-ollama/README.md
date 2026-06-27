@@ -221,7 +221,7 @@ Generated social media post:
 
 <div class='img-center'>
 
-![](../images/1406206-multi-step-wrokflow-ai-content-processing-with-ollama.gif)
+![](../../images/1406206-multi-step-wrokflow-ai-content-processing-with-ollama.gif)
 
 </div>
 

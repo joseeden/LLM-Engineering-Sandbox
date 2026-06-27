@@ -27,7 +27,7 @@ The output of each step is passed to the next stage of the workflow:
 
 <div class='img-center'>
 
-![](../images/project-ai-content-processing-workflow.png)
+![](../../images/project-ai-content-processing-workflow.png)
 
 </div>
 
@@ -194,7 +194,7 @@ Generated social media post:
 
 <div class='img-center'>
 
-![](../images/1406206-multi-step-workflow-ai-content-processing.gif)
+![](../../images/1406206-multi-step-workflow-ai-content-processing.gif)
 
 </div>
 

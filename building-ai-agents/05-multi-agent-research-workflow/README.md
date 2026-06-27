@@ -312,7 +312,7 @@ This project performs live web search through the local SearxNG container, so Do
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-18005310.png)
+    ![](../../images/Screenshot2026-06-18005310.png)
 
     </div>
 
@@ -492,7 +492,7 @@ reports/summary_report.md
 
 <div class='img-center'>
 
-![](../images/17062026-multitool-agent-searxng.gif)
+![](../../images/17062026-multitool-agent-searxng.gif)
 
 </div>
 

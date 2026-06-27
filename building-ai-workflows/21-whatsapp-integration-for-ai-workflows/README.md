@@ -60,7 +60,7 @@ The diagram below shows how the content workflow connects to the WhatsApp Cloud 
 
 <div class='img-center'>
 
-![](../images/project-whatsapp-ai-workflow-notification.png)
+![](../../images/project-whatsapp-ai-workflow-notification.png)
 
 </div>
 
@@ -183,7 +183,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15093538.png)
+    ![](../../images/Screenshot2026-06-15093538.png)
 
     </div>
 
@@ -199,7 +199,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15093816.png)
+    ![](../../images/Screenshot2026-06-15093816.png)
 
     </div>
 
@@ -207,7 +207,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15095433.png)
+    ![](../../images/Screenshot2026-06-15095433.png)
 
     </div>
 
@@ -217,7 +217,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15095356.png)
+    ![](../../images/Screenshot2026-06-15095356.png)
 
     </div>
 
@@ -241,7 +241,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15095316.png)
+    ![](../../images/Screenshot2026-06-15095316.png)
 
     </div>
 
@@ -258,7 +258,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15100621.png)
+    ![](../../images/Screenshot2026-06-15100621.png)
 
     </div>
 
@@ -268,7 +268,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15100844.png)
+    ![](../../images/Screenshot2026-06-15100844.png)
 
     </div>
 
@@ -287,7 +287,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15101333.png)
+    ![](../../images/Screenshot2026-06-15101333.png)
 
     </div>
 
@@ -316,7 +316,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15101653.png)
+    ![](../../images/Screenshot2026-06-15101653.png)
 
     </div>
 
@@ -335,7 +335,7 @@ Environment setup:
 
     <div class='img-center'>
 
-    ![](../images/Screenshot2026-06-15101853.png)
+    ![](../../images/Screenshot2026-06-15101853.png)
 
     </div>
 
@@ -459,7 +459,7 @@ Before running the thumbnail generation step:
 
 <div class='img-center'>
 
-![](../images/Screenshot2026-06-15004842.png)
+![](../../images/Screenshot2026-06-15004842.png)
 
 </div>
 
