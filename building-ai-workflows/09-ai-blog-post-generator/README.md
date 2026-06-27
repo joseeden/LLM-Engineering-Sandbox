@@ -24,7 +24,7 @@ The diagram below shows the path from outline and style examples to the generate
 
 <div class='img-center'>
 
-![](../images/project-ai-blog-post-generator.png)
+![](../../images/project-ai-blog-post-generator.png)
 
 </div>
 

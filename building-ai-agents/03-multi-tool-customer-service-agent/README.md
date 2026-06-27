@@ -33,7 +33,7 @@ The diagram below shows how the agent loops between the user, the model, backend
 
 <div class='img-center'>
 
-![](../images/project-multi-tool-customer-service-agent.png)
+![](../../images/project-multi-tool-customer-service-agent.png)
 
 </div>
 
